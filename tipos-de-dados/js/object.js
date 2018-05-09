@@ -1,13 +1,22 @@
-//declarar forma literal
-var object = {nome: 'Ben', idade: 10, detalhes: {detalhe: 'blabla...'}}
+//Passagem de valor
 
-console.log(object.nome);
-console.log(object.detalhes.detalhe) //acesso um ojeto dentro de outro objeto
+//Forma Literal
+var item1 = {}
+var item2 = {nome: 'mouse', preco:75.32, ativo: true, detalhe: {detalhes: 'bla,bla,bla'} }
 
-//construtor
-var produto = new Object();
-produto.nome = 'smartphone'
-produto.valor = 3000.
+//Construtor
+var pessoa = new Object();
+pessoa.nome = 'Ben'
+pessoa.idade = 10
+pessoa.peso = 9.30
 
-console.log(produto.nome)
-console.log(produto.valor)
+//Acessar
+console.log(item2.nome);
+console.log(item2['ativo']);
+console.log(item2.detalhe.detalhes)
+
+console.log(pessoa.nome)
+console.log(pessoa.peso)
+
+
+
